@@ -12,6 +12,9 @@ app.use(cors()); // Enable CORS for all routes
 app.use(express.json()); // Parse JSON request bodies
 
 // Endpoint to create a checkout session
+app.use('/' , async (req, res) => {
+   return res.json({ message: 'Server is up and running!' });
+})
 app.post('/create-checkout-session', async (req, res) => {
   try {
     const session = await stripe.checkout.sessions.create({
