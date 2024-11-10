@@ -1,12 +1,4 @@
 {
-  "name": "my-backend-project",
-  "version": "1.0.0",
-  "description": "Backend service for handling payments and API requests.",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
-  },
   "dependencies": {
     "@stripe/react-stripe-js": "^2.8.1",
     "@stripe/stripe-js": "^4.7.0",
@@ -18,12 +10,5 @@
     "morgan": "^1.10.0",
     "razorpay": "^2.9.4",
     "stripe": "^17.1.0"
-  },
-  "devDependencies": {},
-  "engines": {
-    "node": ">=14.0.0"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  }
 }
