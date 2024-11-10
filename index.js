@@ -15,7 +15,7 @@ app.use(express.json()); // Parse JSON request bodies
 app.get('/' , async (req, res) => {
    return res.json({ message: 'Server is up and running!' });
 })
-app.get('/create-checkout-session' , async (req, res) => {
+app.get('/test' , async (req, res) => {
    return res.json({ message: 'Server  !' });
 })
 app.post('/create-checkout-session', async (req, res) => {
